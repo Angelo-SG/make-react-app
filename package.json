@@ -4,7 +4,7 @@
   "description": "Custom React app pattern.",
   "main": "index.js",
   "scripts": {
-    "start": "npx webpack-dev-server --mode development --open --hot --live-reload",
+    "start": "npx webpack-dev-server --mode development --open --hot --live-reload --client-logging none",
     "build": "npx webpack --mode production"
   },
   "keywords": [],
