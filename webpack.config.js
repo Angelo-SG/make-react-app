@@ -1,6 +1,7 @@
 // IMPORTS
 const path = require('path');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
+const { CleanWebpackPlugin } = require('clean-webpack-plugin');
 
 // CONFIG
 module.exports = {
@@ -31,6 +32,7 @@ module.exports = {
             template: path.resolve(__dirname, 'src/html/template.html'),
             title: 'React App',
             minify: true
-        })
+        }),
+        new CleanWebpackPlugin()
     ]
 }
